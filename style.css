@@ -1,4 +1,182 @@
-h1{
-    color: blue;
-    font-size: 3rem;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+  /* COLOR */
+  --main-color: #128c7e;
+  --main-color-light: #128c7e;
+  --main-color-dark: #075e54;
+  --main-color-secondary: #bd1e68;
+  --text-color-primary: #f5f8fa;
+  --text-color-secondary: #e1e8ed;
+  --text-color-dark: #14171a;
+  --text-color-dark-secondary: #29333a;
+  /* SIZING */
+  --header-size: 50px;
+  --side-padding: 10%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  background-color: var(--main-color-dark);
+  height: var(--header-size);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
+}
+
+.header__logo {
+  color: var(--text-color-primary);
+  text-decoration: none;
+  font-family: "Poppins", Arial;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.header__links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__links a {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-secondary);
+  text-decoration: none;
+}
+
+.hero {
+  background-color: var(--main-color-light);
+  height: calc(100vh - var(--header-size));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__message {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-dark);
+  font-size: 5rem;
+  padding-left: var(--side-padding);
+  line-height: 1;
+}
+
+.hero__text {
+  font-family: "Poppins", Arial;
+  font-weight: 700;
+  color: var(--text-color-primary);
+  font-size: 1.5rem;
+  padding-top: 10px;
+  margin: 0;
+  padding-left: var(--side-padding);
+}
+
+.sortingVisualizer {
+  color: black;
+  font-family: "Poppins", Arial;
+  font-weight: 700;
+  margin: 30px;
+}
+
+.featuredProject {
+  background-color: var(--text-color-primary);
+  display: flex;
+  align-items: center;
+  height: 60vh;
+}
+
+.featuredProject__picture {
+  padding-right: var(--side-padding);
+}
+
+.featuredProject__image {
+  display: block;
+  border-radius: 10px;
+  width: 700px;
+  box-sizing: border-box;
+  border: 0.5px solid #29333a70;
+}
+
+.featuredProject__image:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.featuredProject__content {
+  padding-right: 20px;
+  padding-left: var(--side-padding);
+}
+
+.featuredProject__title {
+  font-family: "Poppins", Arial;
+  color: var(--main-color-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  margin-bottom: -5px;
+  font-size: 1.2rem;
+}
+
+.featuredProject__heading {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-dark);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  letter-spacing: -0.07rem;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.featuredProject__description {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-dark);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.featuredProject__code {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--main-color-secondary);
+  padding: 4px;
+  border-radius: 10px;
+  border: var(--main-color-secondary) 3px solid;
+  margin-right: 10px;
+}
+
+.featuredProject__code:hover {
+  background-color: var(--text-color-primary);
+  color: var(--main-color-secondary);
+}
+
+.featuredProject__view {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--main-color-secondary);
+  padding: 4px;
+  border-radius: 10px;
+  border: var(--main-color-secondary) 3px solid;
+}
+
+.featuredProject__view:hover {
+  background-color: var(--text-color-primary);
+  color: var(--main-color-secondary);
 }
