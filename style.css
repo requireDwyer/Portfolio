@@ -153,15 +153,15 @@ h1 {
 }
 
 .featuredProject__logo__js {
-  width: 50px;
+  width: 40px;
 }
 
 .featuredProject__logo__css {
-  width: 50px;
+  width: 40px;
 }
 
 .featuredProject__logo__html {
-  width: 50px;
+  width: 40px;
 }
 
 .featuredProject__description {
@@ -204,4 +204,23 @@ h1 {
 .featuredProject__view:hover {
   background-color: var(--text-color-primary);
   color: var(--main-color-secondary);
+}
+
+.skills {
+  margin-inline: var(--side-padding);
+  font-family: "Poppins", Arial;
+  color: var(--text-color-dark);
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.07rem;
+}
+
+.skills__logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.skills__logo {
+  display: flex;
+  justify-content: space-between;
 }
