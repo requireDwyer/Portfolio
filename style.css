@@ -12,8 +12,8 @@
   --text-color-dark-secondary: #29333a;
   /* SIZING */
   --header-size: 50px;
-  --side-padding: 150px;
-  --topAndBottom-padding: 80px;
+  --side-padding: 200px;
+  --topAndBottom-padding: 120px;
   /* TRANSITION */
   --transition: all 0.1s ease;
 }
@@ -34,6 +34,7 @@ header {
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
+  box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.281);
 }
 
 .nav {
@@ -44,7 +45,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-left: var(--side-padding);
-  padding-right: var(--side-padding);
+  padding-right: calc(var(--side-padding) / 2);
   box-sizing: border-box;
 }
 
@@ -78,7 +79,7 @@ header {
 .socials {
   width: 40%;
   padding-inline: var(--side-padding);
-  background-color: var(--text-color-primary);
+  background-color: var(--text-color-secondary);
   box-sizing: border-box;
 }
 
@@ -98,18 +99,19 @@ header {
 }
 
 .hero {
-  background-color: var(--main-color-light);
   height: calc(100vh - var(--header-size));
   display: flex;
   justify-content: space-between;
   margin-top: var(--header-size);
   position: relative;
+  background-color: var(--text-color-primary);
 }
 
 .hero__content {
   width: 60%;
   box-sizing: border-box;
-  z-index: 1;
+  background-color: var(--main-color-light);
+  border-bottom-right-radius: 150px;
 }
 
 .hero__message {
@@ -119,7 +121,7 @@ header {
   line-height: 1;
   padding-left: var(--side-padding);
   padding-right: var(--side-padding);
-  margin-top: 200px;
+  margin-top: 25%;
 }
 
 .hero__text {
@@ -169,11 +171,13 @@ header {
 
 .featuredProject__image {
   display: block;
+  margin-right: -150px;
   border-radius: 10px;
   width: 700px;
   box-sizing: border-box;
   border: 0.5px solid #29333a70;
   transition: var(--transition);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .featuredProject__image:hover {
@@ -273,7 +277,7 @@ header {
   padding-inline: var(--side-padding);
   padding-top: calc(var(--topAndBottom-padding) / 4);
   padding-bottom: calc(var(--topAndBottom-padding) / 2);
-  background-color: var(--text-color-secondary);
+  background-color: #e9edf0;
   font-family: "Poppins", Arial;
   color: var(--text-color-dark);
   font-weight: 700;
