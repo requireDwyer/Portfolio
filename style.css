@@ -161,6 +161,13 @@ header {
 .featuredProject {
   background-color: var(--text-color-primary);
   padding-inline: var(--side-padding);
+  position: relative;
+}
+
+.featuredProject__star {
+  position: absolute;
+  top: 30px;
+  left: 60px;
 }
 
 .featuredProject__container {
@@ -298,4 +305,119 @@ header {
 .skills__logo {
   display: flex;
   justify-content: space-between;
+}
+
+.project {
+  background-color: var(--text-color-primary);
+  padding-inline: var(--side-padding);
+  position: relative;
+}
+
+.project__container {
+  display: flex;
+  padding-block: var(--topAndBottom-padding);
+  align-items: center;
+}
+
+.project__image {
+  display: block;
+  margin-right: -150px;
+  border-radius: 10px;
+  width: 700px;
+  box-sizing: border-box;
+  transition: var(--transition);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project__image:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project__content {
+  padding-right: 20px;
+}
+
+.project__title {
+  font-family: "Poppins", Arial;
+  color: var(--main-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  margin-bottom: -5px;
+  font-size: 1rem;
+}
+
+.project__heading {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-dark);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  letter-spacing: -0.07rem;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.project__tech {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-dark);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.project__logo__js {
+  width: 40px;
+}
+
+.project__logo__css {
+  width: 40px;
+}
+
+.project__logo__html {
+  width: 40px;
+}
+
+.project__description {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-dark);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.project__code {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--main-color);
+  padding: 4px;
+  border-radius: 10px;
+  border: var(--main-color) 3px solid;
+  margin-right: 10px;
+  transition: var(--transition);
+}
+
+.project__code:hover {
+  background-color: var(--text-color-primary);
+  color: var(--main-color);
+}
+
+.project__view {
+  font-family: "Poppins", Arial;
+  color: var(--text-color-primary);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--main-color);
+  padding: 4px;
+  border-radius: 10px;
+  border: var(--main-color) 3px solid;
+  transition: var(--transition);
+}
+
+.project__view:hover {
+  background-color: var(--text-color-primary);
+  color: var(--main-color);
 }
